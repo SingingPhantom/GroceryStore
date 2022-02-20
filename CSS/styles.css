@@ -1,0 +1,387 @@
+:root {
+    --primary-color: #00D8CC;
+    --primary-color-light: #52E3BF;
+    --primary-color-green: #7FEDB1;
+
+    --secondary-color: #3D9DFF;
+    --secondary-color-light: #00BDFF;
+    --secondary-color-shade: #00D6E9;
+    
+}
+
+html {
+    font-size: 16px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* BEGGINNING HEADER STYLES */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    width: 100%;
+    background-color: #00d6e9;
+    padding: 1em;
+    z-index: 1000;
+    box-shadow: 0em .3em 0em rgba(128,128,128, .15);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.header .logo img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.header .navbar {
+    font-size: 1.1rem;
+    display: none;
+}
+
+.header img {
+    width: 2em;
+    cursor: pointer;
+
+}
+
+.header .aisles {
+    list-style: none;
+}
+
+.header .aisles li {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.header .icons {
+    display: flex;
+}
+
+.header .icons > * {
+    height: 2rem;
+    width: 3rem;
+}
+
+.header .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header .dropdown-list {
+    list-style: none;
+    list-style-type: none;
+
+}
+
+.header .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: white;
+    color: #00d6e9;
+    min-width: 15rem;
+    padding: .5rem .7rem;
+    z-index: 1em;
+    border-radius: .2em;
+}
+
+.header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header .dropdown-content:hover {
+    background-color: #00d6e9;
+    color: white;
+
+}
+
+
+@media (min-width: 900px){
+    .header .navbar {
+        display: inline;
+    }
+    .header .dropdown {
+        display: none;
+    }
+}
+
+
+/* END OF HEADER STYLES */
+
+/* BEGGINNING FOOTER STYLES */
+
+.footer {
+    padding: 2rem;
+    background-color: #00D6E9;
+
+    box-shadow: 0em 0em 3em rgba(128,128,128, .15);
+}
+
+
+
+
+
+/* END FOOTER STYLES */
+
+
+/* BEGINNING OF INDEX STYLES */
+
+
+
+.main--home {
+    text-align: center;
+}
+.banner {
+    padding: 1rem;
+}
+.title {
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    color: #00d6e9;
+}
+
+.img--container img {
+    max-width: 100%;
+}
+
+
+/* END OF INDEX STYLES */
+
+
+
+
+
+
+/* BEGINNING OF AISLES STYLES */
+
+.item--title {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: #00d6e9;
+}
+
+
+.item--list {
+    display: grid;
+    gap: 2rem;
+    margin: 4rem;
+    line-height: 2rem;
+}
+
+
+.items {
+    text-align: center;
+
+    background-color: #f7f7f7;
+    padding: 1rem;
+
+    border-style: solid;
+    border-radius: 1.5rem;
+    border-color: #00d6e9;
+}
+
+
+.items img {
+    width: 50%;
+    height: auto;
+}
+
+.item--info {
+    padding: 1rem 0;
+}
+
+.item--labels {
+    text-align: center;
+    color: #00919e;
+    padding-bottom: 1rem;
+}
+
+.more--info, .aisle--link, .add--cart, .more--description {
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 1rem;
+
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: #00d6e9;
+    background-color: #00d6e9;
+    color: white;
+}
+
+@media (min-width: 40rem) {
+    .item--list, .featured--items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 56rem) {
+    .item--list, .featured--items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* END OF FRUIT AISLE STYLES */
+
+/* BEGINNING OF ITEM DESCRIPTION STYLES */
+
+.back {
+    position: absolute;
+    top: 5rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    border-radius: .5rem;
+    background-color: #00D6E9;
+    color: white;
+}
+
+.item--container, .description {
+    background-color: #f7f7f7;
+    
+    padding: 1.5rem;
+    margin-top: 8rem;
+    margin-inline: 3rem;
+
+    border-style: solid;
+    border-radius: 1.5rem;
+    border-color: #00d6e9;
+}
+
+/* Centering the image */
+.item--container img {
+    display: block;
+    margin-inline: auto;
+    width: 50%;
+}
+
+.info {
+    display: grid;
+    padding-block: 2rem;
+}
+
+.info > * {
+    margin-block: .5rem;
+}
+
+.name {
+    /* text-align: center;
+    padding-top: 5rem; */
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #00D6E9;
+}
+
+.price {
+    font-size: 1.1rem;
+    color: #00919e;
+}
+
+.quantity--controls {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    padding: .5rem;
+    margin-block-start: 2rem;
+    border-color: #00D6E9;
+    border-style: solid;
+    background-color: white;
+}
+
+.quantity--controls input {
+    border-color: #00D6E9;
+    border-style: none;
+
+    text-align: center;
+    color: #00919e;
+    width: 50%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.quantity--sign {
+    background-color: white;
+    border-style: none;
+}
+
+.quantity--sign img {
+    width: 2.5rem;
+}
+
+
+.description {
+    font-size: 1rem;
+    color: #00D6E9;
+    text-align: justify;
+
+    margin-block: 3rem;
+}
+
+.description span {
+    font-size: 1.2em;
+    line-height: 2rem;
+}
+
+@media (min-width: 700px){
+    .item--container {
+        display: flex;
+    }
+
+    .item--container img {
+        height: 50%;
+    }
+
+    .item--container > * {
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .item--container img {
+        max-height: 25rem;
+        padding-right: 10%;
+    }
+
+    .item--info {
+        margin-right: auto;
+    }
+}
+
+/* END OF ITEM DESCRIPTION STYLES */

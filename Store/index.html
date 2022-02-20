@@ -1,16 +1,259 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css"/>
 
-<html>
-    <head>
-        <title>The Cheetos Store TEST4</title>
-        <meta name="Description" content="This is the description">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                
-            </nav>
-        </header>
-    </body>
+    <title>GROCERY ZONE</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="/Store/index.html" class="logo"><img src="/Images/header/logo.png">G-ZONE</a>
+
+        <nav class="navbar">
+            <ul class="aisles">
+                <li><a href="/Store/aisle_fruit.html">Fruits & Vegetables</a></li>
+                <li><a href="#">Meats</a></li>
+                <li><a href="/Store/aisle_dairy.html">Dairy</a></li>
+                <li><a href="#">Snacks</a></li>
+                <li><a href="#">Baking</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <div class="dropdown" role="checkbox"><img src="/Images/header/hambuger-icon.png" alt="Drop down menu">
+                <ul class="dropdown-list">
+                    <li><a href="/Store/aisle_fruit.html" class="dropdown-content">Fruits & Vegetables</a></li>
+                    <li><a href="#" class="dropdown-content">Meats</a></li>
+                    <li><a href="/Store/aisle_dairy.html" class="dropdown-content">Dairy</a></li>
+                    <li><a href="#" class="dropdown-content">Snacks</a></li>
+                    <li><a href="#" class="dropdown-content">Baking</a></li>
+                </ul>
+            </div>
+
+            <a href="/Store/shopping_cart.html" class="cart"><img src="/Images/header/cart.png" alt="cart-icon"></a>
+            <a href="#" class="user"><img src="/Images/header/user.png" alt="user-icon"></a>
+        </div>
+    </header>
+
+
+
+
+
+    <main class="main--home">
+        <h1 class="banner title">WELCOME TO GROCERY-ZONE</h1>
+        <div class="img--container">
+            <img src="/Images/store/home-bg.jpg" alt="Vegetables">
+        </div>
+
+        <h2 class="title">FEATURED ITEMS</h2>
+        <div class="featured--items">
+            <section class="item--list">
+
+                <div class="items">
+                        <img src="/Images/f&v/apples.png">
+                        <div class="item--info">
+                            
+                            <div class="item--labels">
+                                <h3>Apples</h3>
+                                <span class="price">$.99/each</span>
+                            </div>
+    
+                            <div class="item--btns">
+                                <a href="/Store/fruits_description/apples.html" class="more--description">MORE DESCRIPTION</a>
+                            </div>
+                            
+                        </div>
+                </div>
+
+
+                <div class="items">
+                    <img src="/Images/f&v/mangos.png">
+                    <div class="item--info">
+
+                        <div class="item--labels">
+                            <h3>Mangos</h3>
+                            <span class="price">$.89/each</span>
+                        </div>
+
+                        <div class="item--btns">
+                            <a href="/Store/fruits_description/mangos.html" class="more--description">MORE DESCRIPTION</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="items">
+                    <img src="/Images/f&v/oranges.png">
+
+                    <div class="item--info">
+                        
+                        <div class="item--labels">
+                            <h3>Oranges</h3>
+                            <span class="price">$1.19/each</span>
+                        </div>
+
+                        <div class="item--btns">
+                            <a href="/Store/fruits_description/oranges.html" class="more--description">MORE DESCRIPTION</a>
+                        </div>
+
+                    </div>
+                </div>
+            
+                <div class="items">
+                        <img src="/Images/f&v/asparagus.png">
+                        <div class="item--info">
+                            
+                            <div class="item--labels">
+                                <h3>Asparagus</h3>
+                                <span class="price">$2.99/lb</span>
+                            </div>
+    
+                            <div class="item--btns">
+                                <a href="/Store/fruits_description/asparagus.html" class="more--description">MORE DESCRIPTION</a>
+                            </div>
+                            
+                        </div>
+                </div>
+
+
+                <div class="items">
+                    <img src="/Images/f&v/cauliflower.png">
+                    <div class="item--info">
+
+                        <div class="item--labels">
+                            <h3>Cauliflower</h3>
+                            <span class="price">$1.49/each</span>
+                        </div>
+
+                        <div class="item--btns">
+                            <a href="/Store/fruits_description/cauliflower.html" class="more--description">MORE DESCRIPTION</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="items">
+                    <img src="/Images/f&v/onions.png">
+
+                    <div class="item--info">
+                        
+                        <div class="item--labels">
+                            <h3>Onions</h3>
+                            <span class="price">$2.79/lb</span>
+                        </div>
+
+                        <div class="item--btns">
+                            <a href="/Store/fruits_description/onions.html" class="more--description">MORE DESCRIPTION</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+        
+        <h2 class="title">AISLES</h2>
+        <div class="aisles">
+            
+
+            <section class="item--list">
+
+                <div class="items">
+                        <img src="/Images/store/fruits&veggies.png" alt="Fruits & Vegetables">
+                        <div class="item--info">
+                            
+                            <div class="item--labels">
+                                <h3>Fruits & Vegetables</h3>
+                            </div>
+    
+                            <div class="item--btns">
+                                <a href="/Store/aisle_fruit.html" class="aisle--link">GO TO AISLE</a>
+                            </div>
+                            
+                        </div>
+                </div>
+
+
+                <div class="items">
+                    <img src="/Images/store/meats.png" alt="Meats">
+                    <div class="item--info">
+
+                        <div class="item--labels">
+                            <h3>Meats</h3>
+                        </div>
+
+                        <div class="item--btns">
+                            <a href="/Store/aisle_meat.html" class="aisle--link">GO TO AISLE</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="items">
+                    <img src="/Images/store/dairy.png" alt="Dairy">
+
+                    <div class="item--info">
+                        
+                        <div class="item--labels">
+                            <h3>Dairy</h3>
+                        </div>
+
+                        <div class="item--btns">
+                            <a href="/Store/aisle_dairy.html" class="aisle--link">GO TO AISLE</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="items">
+                    <img src="/Images/store/snacks.png" alt="Snacks">
+
+                    <div class="item--info">
+                        
+                        <div class="item--labels">
+                            <h3>Snacks</h3>
+                        </div>
+
+                        <div class="item--btns">
+                            <a href="/Store/aisle_snacks.html" class="aisle--link">GO TO AISLE</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="items">
+                    <img src="/Images/store/baking.png" alt="Baking">
+
+                    <div class="item--info">
+                        
+                        <div class="item--labels">
+                            <h3>Baking</h3>
+                        </div>
+
+                        <div class="item--btns">
+                            <a href="/Store/aisle_baking.html" class="aisle--link">GO TO AISLE</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer--container">
+            <h5>This page was made by: Samy Arab</h5>
+        </div>
+    </footer>
+</body>
+
+
+
 </html>

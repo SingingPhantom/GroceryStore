@@ -1,0 +1,465 @@
+
+
+html{
+    height: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100%;
+    padding: 1rem;
+}
+div{
+    height: 100%;
+}
+
+p{
+    height:100%;
+    width:100%;
+    font-size:2.5vh;
+    overflow:hidden;
+}
+
+.shoppingCart{
+    display:flex;
+    flex-direction: row;
+    height:100%;
+    width:100%;
+    justify-content: center;
+   
+    
+}
+
+.aquaText{
+    font-size:x-large;
+    font-weight: bold;
+    color:white;
+    background-color: #00D6E9;
+    margin-top: auto;
+    border-radius: 10px;
+    height: 50px;
+
+
+}
+
+.listHandling{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    width:65%;
+    height:80vh;
+    
+    border-radius: 10px;
+    border: 6px solid rgba(0, 213, 233, 1);
+    margin:15px;
+    min-width:266px;
+    min-height:300px;
+    
+   
+}
+
+
+.moneyHandling{
+    display:flex;
+    flex-direction: column;
+    background: rgba(135, 173, 179, .15);
+    
+    width:35%;
+    height:80vh;
+    
+    border-radius: 10px;
+    border: 6px solid rgba(0, 213, 233, 1);
+    margin:15px;
+    
+   
+}
+
+
+.itemList{
+    
+    width: 100%;
+    height:100%;
+    background: rgba(135, 173, 179, .15);
+    text-align:center;
+    
+
+   
+  
+
+}
+
+
+strong{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 30px;
+    color:#00D6E9;
+}
+
+
+.ListHeader{
+    height: 50px;
+
+    text-align:center;
+    border-radius: 10px;
+    background-color:#ffffff;
+    
+
+   
+
+
+
+
+}
+
+.taxes{
+    height:35%;
+    color:#00D6E9;
+    text-align:right;
+}
+
+.totalSum{
+   display:flex;
+   flex-direction: column;
+    height:15%;
+    justify-content: center;
+    align-items: end;
+    color:#00D6E9;
+    font-size: 2rem;
+    
+}
+
+.item{
+
+display: flex;
+flex-direction: row;
+
+border: 2px solid #00D6E9;
+height:  calc(17.5px +  100%);
+overflow:hidden;
+background-color:#f7f7f7;
+border-radius: 8px;
+
+
+
+
+
+}
+
+.itemDisplay{
+
+    display: flex;
+    width:30%;
+    justify-content: left;
+    align-items: center;
+
+}
+
+img{
+    
+width: 10.5vw;
+height: 10.5vw;
+
+
+}
+.itemDescription{
+display:flex;
+justify-content: center;
+align-items:center;
+width:50%;
+font-size:calc(0.5px + 2.0vw);
+
+}
+
+h3{
+    font-size: calc(100% + 0.5rem)
+}
+h1{
+    width: 100%;
+
+}
+
+.itemPrice{
+display:flex;
+justify-content: center;
+align-items:center;
+width:20%;
+
+font-size: calc(5px + 1.5vw);
+
+
+
+}
+
+.scrollableList{
+
+    overflow-y:scroll;
+    color:#00D6E9;
+    height: 100%;
+    
+    
+}
+.scrollableMoneyList{
+
+    overflow-y:auto;
+    color:#00D6E9;
+    height: 80%;
+    
+    
+}
+
+li{
+    padding:15px;
+    height: 10vh;
+}
+
+.itemQuantity{
+display:flex;
+justify-content: center;
+align-items:center;
+width:20%;
+
+font-size:calc(2px + 1.5vw);
+}
+
+
+h3{
+    text-align:right;
+    color:#00D6E9;
+}
+
+h1{
+    text-align:right; 
+    color:#00D6E9;
+}
+
+@media only screen and (max-height: 500px){
+
+    .scrollableList{
+        height:100%;
+    }
+    h1{
+        height:5%;
+        font-size: 5vh;
+    }
+    h2{
+        font-size: 4vh;
+    }
+    .totalSum{
+        font-size: 4vh;
+    }
+
+    h3{
+        font-size:3vh;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (min-height: 420px){
+
+.ListHeader{width: 100%;}
+.itemList{width: 100%; height: 100%;}
+.itemDescription{font-size:25px;}
+.itemPrice{font-size:20px;}
+img{width: 80px; height:80px;}
+li{padding:15px; height: 80px;}
+.scrollableList{height:100%;}
+.itemQuantity{font-size: 20px;}
+
+
+}
+
+
+
+@media only screen and (max-device-width : 480px){
+
+    .shoppingCart{
+        display:flex;
+        flex-direction: column;
+        height:200vh;
+        width:100%;
+        justify-content:center;
+        padding-right: 4rem;
+        
+        
+        
+    }
+
+    .scrollableMoneyList{
+
+        overflow-y:scroll;
+        color:#00D6E9;
+        height:100%;
+        
+        
+    }
+
+
+    .listHandling{
+    
+        display:flex;
+        flex-direction: column;
+        justify-content: left;
+        width:100%;
+        height:45%;
+        
+        border-radius: 10px;
+        border: 6px solid rgba(0, 213, 233, 1);
+        margin:15px;
+        min-width:266px;
+        min-height:300px;
+        
+       
+    }
+
+    .moneyHandling{
+        display:flex;
+        flex-direction: column;
+        
+        
+        width:100%;
+        height:50%;
+        
+        border-radius: 10px;
+        border: 6px solid rgba(0, 213, 233, 1);
+        margin:15px;
+        font-size:calc(7.5px + 3.5vw);
+
+
+
+    }
+
+    
+
+    .itemList{
+    
+        width: 100%;
+        height:100%;
+        background: rgba(135, 173, 179, .15);
+        text-align:center;
+        min-width:266px;
+        min-height:300px;
+    
+       
+      
+    
+    }
+    
+    
+    strong{
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:bold;
+        font-size: 10vw;
+        color:#00D6E9;
+    }
+    
+    
+    .ListHeader{
+        height: 10vw;
+    
+        text-align:center;
+        border-radius: 10px;
+        background-color:#ffffff;
+        
+    
+       
+    
+    
+    
+    
+    }
+    
+    
+    .item{
+    
+    display: flex;
+    flex-direction: row;
+    
+    border: 3px solid #00D6E9;
+    height:  calc(17.5px +  20vw);
+    overflow:hidden;
+    background-color:#f7f7f7;
+    border-radius: 20px;
+    
+    
+    
+    
+    
+    }
+    
+    .itemDisplay{
+    
+        display: flex;
+        width:30%;
+        justify-content: left;
+        align-items: center;
+    
+    }
+    
+    img{
+        
+    width: 17.5vw;
+    height: 17.5vw;
+    
+    
+    }
+    .itemDescription{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:50%;
+    font-size:calc(8.5px + 5.0vw);
+    
+    }
+    
+    .itemPrice{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:20%;
+    
+    font-size: calc(7.5px + 3.5vw);
+    
+    
+    
+    }
+    
+    .scrollableList{
+    
+        overflow-y:scroll;
+        color:#00D6E9;
+        height:100%;
+        
+        
+    }
+    
+    li{
+        padding:5vh;
+        height: 10vh;
+    }
+    
+    .itemQuantity{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:20%;
+    
+    font-size:calc(7.5px + 3.5vw);
+    }
+    
+    ol{
+        font-size:3.5vw;
+        
+    }
+
+    .totalSum{
+        font-size: 5vh;
+    }
+
+    
+
+}
+
+
+
+    
