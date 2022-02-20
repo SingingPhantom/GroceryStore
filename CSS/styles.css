@@ -339,6 +339,7 @@ input:focus, textarea:focus, select:focus{
 .quantity--sign {
     background-color: white;
     border-style: none;
+    cursor: pointer;
 }
 
 .quantity--sign img {
