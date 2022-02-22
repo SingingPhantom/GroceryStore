@@ -1,18 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <title>Apple Pie</title>
 </head>
 
+<body>
+    <header class="header">
+        <a href="/index.html" class="logo"><img src="/Images/header/logo.png">G-ZONE</a>
 
-<main>
-    <a href="bakery_p2.html" class="back"> BACK </a>
+        <nav class="navbar">
+            <ul class="aisles">
+                <li><a href="/Store/aisle_fruit.html">Fruits & Vegetables</a></li>
+                <li><a href="/Store/aisle_meat.html">Meats</a></li>
+                <li><a href="/Store/aisle_dairy.html">Dairy</a></li>
+                <li><a href="/Store/aisle_snacks.html">Snacks</a></li>
+                <li><a href="/Store/aisle_bakery.html">Baking</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <div class="dropdown" role="checkbox"><img src="/Images/header/hambuger-icon.png" alt="Drop down menu">
+                <ul class="dropdown-list">
+                    <li><a href="/Store/aisle_fruit.html" class="dropdown-content">Fruits & Vegetables</a></li>
+                    <li><a href="/Store/aisle_meat.html" class="dropdown-content">Meats</a></li>
+                    <li><a href="/Store/aisle_dairy.html" class="dropdown-content">Dairy</a></li>
+                    <li><a href="/Store/aisle_snacks.html" class="dropdown-content">Snacks</a></li>
+                    <li><a href="/Store/aisle_bakery.html" class="dropdown-content">Bakery</a></li>
+                </ul>
+            </div>
+
+            <a href="/Store/shopping_cart.html" class="cart"><img src="/Images/header/cart.png" alt="cart-icon"></a>
+            <a href="#" class="user"><img src="/Images/header/user.png" alt="user-icon"></a>
+        </div>
+    </header>
+
+    <main>
+        <a href="/Store/aisle_bakery.html" class="back"> BACK </a>
 
 
 
-    <div>
-        <img src="pie.jpg" alt="Apple Pie">
+        <div class="item--container">
+        <img src="/Images/bakery/pie.jpg" alt="Apple Pie">
 
         <div class="info">
             <h3 class="name">Apple Pie</h3>
